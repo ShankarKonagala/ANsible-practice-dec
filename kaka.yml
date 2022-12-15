@@ -1,8 +1,8 @@
 ---
-- host: all
+- hosts: all
   become: yes
   tasks:
    - name: uninstalling apache2
      apt: 
         name: apache2
-        state: present
+        state: absent
